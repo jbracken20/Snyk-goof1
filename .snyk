@@ -1,0 +1,109 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-JS-ANSIREGEX-1583908:
+    - snyk > @snyk/update-notifier > boxen > string-width > strip-ansi > ansi-regex:
+        reason: None given
+        expires: '2022-02-17T19:48:34.083Z'
+    - snyk > @snyk/update-notifier > boxen > ansi-align > string-width > strip-ansi > ansi-regex:
+        reason: None given
+        expires: '2022-02-17T19:48:34.083Z'
+    - snyk > @snyk/update-notifier > boxen > widest-line > string-width > strip-ansi > ansi-regex:
+        reason: None given
+        expires: '2022-02-17T19:48:34.083Z'
+  SNYK-JS-BL-608877:
+    - tap > codecov.io > request > bl:
+        reason: None given
+        expires: '2022-02-17T19:48:34.083Z'
+  SNYK-JS-EJS-1049328:
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2022-02-17T19:48:34.083Z'
+  'npm:ejs:20161128':
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2022-02-17T19:48:34.083Z'
+  'npm:ejs:20161130':
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2022-02-17T19:48:34.083Z'
+  'npm:ejs:20161130-1':
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2022-02-17T19:48:34.083Z'
+  SNYK-JS-GLOBPARENT-1016905:
+    - tap > nyc > micromatch > parse-glob > glob-base > glob-parent:
+        reason: None given
+        expires: '2022-02-17T19:48:34.083Z'
+    - tap > nyc > test-exclude > micromatch > parse-glob > glob-base > glob-parent:
+        reason: None given
+        expires: '2022-02-17T19:48:34.083Z'
+  SNYK-JS-HOSTEDGITINFO-1088355:
+    - tap > nyc > test-exclude > read-pkg-up > read-pkg > normalize-package-data > hosted-git-info:
+        reason: None given
+        expires: '2022-02-17T19:48:34.083Z'
+  SNYK-JS-INI-1048974:
+    - snyk > @snyk/update-notifier > is-installed-globally > global-dirs > ini:
+        reason: None given
+        expires: '2022-02-17T19:48:34.083Z'
+    - snyk > @snyk/update-notifier > latest-version > package-json > registry-auth-token > rc > ini:
+        reason: None given
+        expires: '2022-02-17T19:48:34.084Z'
+    - snyk > @snyk/update-notifier > latest-version > package-json > registry-url > rc > ini:
+        reason: None given
+        expires: '2022-02-17T19:48:34.084Z'
+  SNYK-JS-LODASHSET-1320032:
+    - snyk > snyk-resolve-deps > lodash.set:
+        reason: None given
+        expires: '2022-02-17T19:48:34.084Z'
+  SNYK-JS-MINIMIST-559764:
+    - snyk > @snyk/update-notifier > latest-version > package-json > registry-auth-token > rc > minimist:
+        reason: None given
+        expires: '2022-02-17T19:48:34.084Z'
+    - snyk > @snyk/update-notifier > latest-version > package-json > registry-url > rc > minimist:
+        reason: None given
+        expires: '2022-02-17T19:48:34.084Z'
+    - tap > nyc > caching-transform > mkdirp > minimist:
+        reason: None given
+        expires: '2022-02-17T19:48:34.084Z'
+    - tap > nyc > istanbul > handlebars > optimist > minimist:
+        reason: None given
+        expires: '2022-02-17T19:48:34.084Z'
+  'npm:hoek:20180212':
+    - tap > codecov.io > request > hawk > hoek:
+        reason: None given
+        expires: '2022-02-17T19:48:34.084Z'
+    - tap > codecov.io > request > hawk > boom > hoek:
+        reason: None given
+        expires: '2022-02-17T19:48:34.084Z'
+    - tap > codecov.io > request > hawk > sntp > hoek:
+        reason: None given
+        expires: '2022-02-17T19:48:34.084Z'
+    - tap > codecov.io > request > hawk > cryptiles > boom > hoek:
+        reason: None given
+        expires: '2022-02-17T19:48:34.084Z'
+  'npm:qs:20170213':
+    - tap > codecov.io > request > qs:
+        reason: None given
+        expires: '2022-02-17T19:48:34.084Z'
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:http-signature:20150122':
+    - tap > codecov.io > request > http-signature:
+        patched: '2022-01-18T19:47:24.304Z'
+  'npm:hawk:20160119':
+    - tap > codecov.io > request > hawk:
+        patched: '2022-01-18T19:47:24.304Z'
+  'npm:mime:20170907':
+    - tap > codecov.io > request > form-data > mime:
+        patched: '2022-01-18T19:47:24.304Z'
+  'npm:ms:20151024':
+    - humanize-ms > ms:
+        patched: '2022-01-18T19:47:24.304Z'
+  'npm:request:20160119':
+    - tap > codecov.io > request:
+        patched: '2022-01-18T19:47:24.304Z'
+  'npm:tunnel-agent:20170305':
+    - tap > codecov.io > request > tunnel-agent:
+        patched: '2022-01-18T19:47:24.304Z'
